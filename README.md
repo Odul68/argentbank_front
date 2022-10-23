@@ -6,17 +6,17 @@ Projet 13 - Utilisez une API pour un compte utilisateur bancaire avec React
 
 ### Installing and launching Back-End
 
-Clone the repository of ArgentBank Back-End:
+Clone the repository :
 
 `git clone https://github.com/Odul68/Project-10-Bank-API.git`
 
-Inside this back-end repository, install dependencies:
+Install dependencies:
 
 `npm install`
 
 Launch back-end on port 3001 :
 
-`npm run server`
+`npm run dev:server`
 
 #### Populated Database Data
 
@@ -40,15 +40,15 @@ Populate database with two users :
 
 ### Installing and launching Front-end
 
-Clone the repository of ArgentBank Front-End:
+Clone the repository :
 
 `git clone https://github.com/Odul68/argentbank_front.git`
 
-Inside this Front-End repository, install dependencies:
+Install dependencies:
 
 `npm install`
 
-Lauch Front-End on port 3000:
+Lauch Front-End :
 
 `npm start`
 
