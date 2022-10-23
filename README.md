@@ -42,7 +42,7 @@ Populate database with two users :
 
 Clone the repository of ArgentBank Front-End:
 
-`git clone https://github.com/CathelineOnceUponATime/CathelineGrappin_13_04042022-Front.git`
+`git clone https://github.com/Odul68/argentbank_front.git`
 
 Inside this Front-End repository, install dependencies:
 
