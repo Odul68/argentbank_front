@@ -47,6 +47,13 @@ const logout = () => {
   };
 };
 
+/**
+ * Function to get token when email and password are correct
+ * @param {*} email
+ * @param {*} password
+ * @returns data with token
+ */
+
 export const fetchLogin = (email, password) => {
   return function (dispatch) {
     dispatch(fetchDataRequest());
@@ -62,7 +69,6 @@ export const fetchLogin = (email, password) => {
     })
       .then((response) => {
         response.json().then(function (data) {
-          console.log(data);
           dispatch(loginConnected(data));
           dispatch(fetchUsers());
         });
@@ -72,6 +78,12 @@ export const fetchLogin = (email, password) => {
       });
   };
 };
+
+/**
+ * Function to get user profile
+ * using token from previous function
+ * @returns user profile
+ */
 
 export const fetchUsers = () => {
   return function (dispatch) {
@@ -93,6 +105,13 @@ export const fetchUsers = () => {
       });
   };
 };
+
+/**
+ * Function to update firstname and lastname of user profile
+ * @param {*} firstName
+ * @param {*} lastName
+ * @returns updated user profile
+ */
 
 export const updateProfileInfo = (firstName, lastName) => {
   return function (dispatch) {
@@ -118,6 +137,11 @@ export const updateProfileInfo = (firstName, lastName) => {
       });
   };
 };
+
+/**
+ * Function to logout from user profile
+ * @returns the initial State
+ */
 
 export const Logout = () => {
   return function (dispatch) {

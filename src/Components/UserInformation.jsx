@@ -3,6 +3,12 @@ import store from "../Redux/store";
 import { updateProfileInfo } from "../Redux/actions";
 import { useState, useRef } from "react";
 
+/**
+ * Shows Firstname and Lastname of the user
+ * Possibility to update profile when clicked on
+ *
+ */
+
 export default function UserInformation() {
   const [show, setShow] = useState(false);
   const firstNameRef = useRef();

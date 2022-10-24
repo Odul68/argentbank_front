@@ -5,6 +5,14 @@ import { useSelector } from "react-redux";
 import { useEffect, useRef } from "react";
 import Header from "../Components/Header";
 
+/**
+ * Login form with two inputs :
+ * email
+ * password
+ * Option "rememberMe" to save the information
+ * If login successful, gives access to the user page with personal inforation
+ */
+
 export default function Login() {
   let email = useRef();
   let password = useRef();

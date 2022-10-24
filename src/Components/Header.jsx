@@ -5,6 +5,13 @@ import { useSelector } from "react-redux";
 import { Logout } from "../Redux/actions";
 import { useEffect, useRef } from "react";
 
+/**
+ * Shows Header with :
+ * login button when not connected
+ * logout button when connected
+ *
+ */
+
 export default function Header() {
   const connected = useSelector((state) => state.connected);
   const loginLink = useRef();
@@ -17,8 +24,9 @@ export default function Header() {
     } else {
       logoutLink.current.style.display = "none";
       logoutIcon.current.style.display = "none";
+      loginLink.current.style.display = "block";
     }
-  }, [connected, Logout()]);
+  }, [connected]);
 
   return (
     <nav className="main-nav">
