@@ -38,24 +38,37 @@ export default function UserInformation() {
       </h1>
       {show && (
         <div id="editName">
-          <input
-            ref={firstNameRef}
-            type="text"
-            id="inputFirstname"
-            placeholder={firstName}
-          ></input>
-          <input
-            ref={lastNameRef}
-            type="text"
-            id="inputLastname"
-            placeholder={lastName}
-          ></input>
-          <button className="saveButton" onClick={() => editData()}>
-            Confirm
-          </button>
-          <button id="cancelButton" onClick={() => cancelEdit()}>
-            Cancel
-          </button>
+          <div className="formInputs">
+            <input
+              className="nameInputs"
+              ref={firstNameRef}
+              type="text"
+              id="inputFirstname"
+              placeholder={firstName}
+            ></input>
+            <input
+              className="nameInputs"
+              ref={lastNameRef}
+              type="text"
+              id="inputLastname"
+              placeholder={lastName}
+            ></input>
+          </div>
+          <div className="formButtons">
+            <button
+              className="formButton saveButton"
+              onClick={() => editData()}
+            >
+              Confirm
+            </button>
+            <button
+              className="formButton"
+              id="cancelButton"
+              onClick={() => cancelEdit()}
+            >
+              Cancel
+            </button>
+          </div>
         </div>
       )}
       {!show && (

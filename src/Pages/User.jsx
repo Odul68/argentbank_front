@@ -13,12 +13,14 @@ import { useSelector } from "react-redux";
 export default function User() {
   const connected = useSelector((state) => state.connected);
   return connected ? (
-    <main className="main bg-dark">
+    <>
       <Header />
-      <UserInformation />
-      <Account />
+      <main className="main bg-dark">
+        <UserInformation />
+        <Account />
+      </main>
       <Footer />
-    </main>
+    </>
   ) : (
     "Veuillez vous connecter"
   );

@@ -6,13 +6,11 @@ import Login from "./Pages/Login";
 export default function App() {
   return (
     <>
-      <div>
-        <Routes>
-          <Route path="/" element={<Accueil />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/User" element={<User />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Accueil />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/User" element={<User />} />
+      </Routes>
     </>
   );
 }
